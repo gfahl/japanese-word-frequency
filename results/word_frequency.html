@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Word frequency</title>
+    <style type="text/css">
+      table, th, td {border: 1px solid black;}
+      table {border-collapse: collapse;}
+      th, td {padding: 3px;}
+      th {text-align: left; vertical-align: top; width: 150px;}
+      th:first-child {width: auto;}
+      td {text-align: center;}
+      span.subh {font-weight: normal;}
+    </style>
+</head>
+<body>
+    <h1>Word frequency in Japanese go-related texts</h1>
+    <table>
+      <tr>
+        <th colspan=2 rowspan="2"></th>
+        <th colspan="5">Report format</th>
+      </tr>
+      <tr>
+        <th>Standard<br /><span class="subh">with links to jisho.org</span></th>
+        <th>Common<br /><span class="subh">same as Standard but leaves out low frequency words</span></th>
+        <th>Detailed<br /><span class="subh">includes dictionary data in the report</span></th>
+        <th>XML</th>
+        <th>Visited<br /><span class="subh">list of analyzed pages</span></th>
+      </tr>
+      <tr>
+        <th rowspan="3">Text<br />type</th>
+        <th>Game commentaries<br /><span class="subh">from Asahi Shimbun</span></th>
+        <td><a href='word_frequency_commentary.html'>link</a></td>
+        <td><a href='word_frequency_commentary_common.html'>link</a></td>
+        <td><a href='word_frequency_commentary_long.html'>link</a></td>
+        <td><a href='word_frequency_commentary.xml'>link</a></td>
+        <td><a href='visited_pages_commentary.html'>link</a></td>
+      </tr>
+      <tr>
+        <th>News articles<br /><span class="subh">from Nihon Ki-in</span></th>
+        <td><a href='word_frequency_news.html'>link</a></td>
+        <td><a href='word_frequency_news_common.html'>link</a></td>
+        <td><a href='word_frequency_news_long.html'>link</a></td>
+        <td><a href='word_frequency_news.xml'>link</a></td>
+        <td><a href='visited_pages_news.html'>link</a></td>
+      </tr>
+      <tr>
+        <th>Wikipedia<br /><span class="subh">category 囲碁 and subcategories</span></th>
+        <td><a href='word_frequency_wikipedia.html'>link</a></td>
+        <td><a href='word_frequency_wikipedia_common.html'>link</a></td>
+        <td><a href='word_frequency_wikipedia_long.html'>link</a></td>
+        <td><a href='word_frequency_wikipedia.xml'>link</a></td>
+        <td><a href='visited_pages_wikipedia.html'>link</a></td>
+      </tr>
+    </table>
+    <p><a href='doc.html'>Source code and documentation</a></p>
+</body>
