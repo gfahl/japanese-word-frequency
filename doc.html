@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Documentation - Japanese Word Frequency</title>
+</head>
+<body>
+    <h1>Documentation</h1>
+    <p>Word frequency in Japanese documents.</p>
+    <p>This has been run in the following environment: Windows 7, mysql 5.1, ruby 1.9.1 (dbi 0.4.3, nokogiri 1.4.3.1)</p>
+
+    <h2>Limitations</h2>
+    <p>To make life easier, some simplifications are made:</p>
+    <ul>
+        <li>The program only looks for words containing at least one kanji. This means that particles such as の and other kana-only words like これから are not counted.</li>
+        <li>The only grammatical analysis that the program performs is to identify verbs and い-adjectives. It only looks for the stem (such as 食べ for 食べる and 黒 for 黒い). This enables it to identify conjugations like 食べます and 食べた as belonging to the same dictionary entry 食べる. Likewise, 黒い and 黒くて are counted together. This does however mean that distinct verbs like 囲う and 囲む are counted together and that there will be one combined count for the words 黒, 黒い, and 黒む.</li>
+    </ul>
+    <p>The dictionary (JMDict) used for the analysis is understandably rather incomplete with regard to go terminology. Example of words that are not in the dictionary: 手抜き (tenuki), 眼形 (eye shape), 利かし (kikashi). Examples of words that <em>are</em> in the dictionary: 攻め合い (semeai), 先手 (sente), 定石 (joseki).</p>
+
+    <h2>Crawl for documents</h2>
+    <p>Downloaded pages are saved with a path corresponding to their type and url. For example, the overview page for Meijin commentaries at "http://www.asahi.com/igo/meijin/PNDkansen_ichiran.html" is saved as "downloads/commentary/www.asahi.com/igo/meijin/PNDkansen_ichiran.html"</p>
+    <h3>Commentaries</h3>
+    <p>Pages to analyze: Game commentaries at http://www.asahi.com/igo</p>
+    <p>Algorithm:</p>
+    <pre>
+pages_to_visit = ["http://www.asahi.com/igo/meijin/PNDkansen_ichiran.html"]
+repeat until pages_to_visit empty:
+    pop url from pages_to_visit
+    download and save page
+    add links to pages_to_visit if
+        * the link starts with "http://www.asahi.com/igo/meijin"
+        * the link has not been visited before
+later analyze all pages to see which include game commentaries and what part of the doc is the actual commentary
+    </pre>
+    <p>Script to download commentary pages: <em>crawl_commentaries.rb</em></p>
+    <h3>Wikipedia articles</h3>
+    <p>Pages to analyze: Articles on Japanese Wikipedia having category 囲碁 or one of its subcategories (recursively)</p>
+    <p>Algorithm:</p>
+    <pre>
+pages_to_visit = ["http://ja.wikipedia.org/wiki/Category:%E5%9B%B2%E7%A2%81"]
+repeat until pages_to_visit empty:
+    pop url from pages_to_visit
+    download and save page
+    add links to pages_to_visit if
+        * the current page is a 'Category page'
+        * the link is within the main section of the page (the page-specific part)
+        * the link has not been visited before
+later analyze all pages to exclude category pages and extract the main section of the page
+    </pre>
+    <p>Script to download wikipedia pages: <em>crawl_wikipedia.rb</em></p>
+    <h3>News stories</h3>
+    <p>Pages to analyze: News articles at http://www.nihonkiin.or.jp/news</p>
+    <p>Algorithm:</p>
+    <pre>
+pages_to_visit = []
+download "http://www.nihonkiin.or.jp/news/index.html"
+add links to pages_to_visit if the link is in the list of news articles
+n = 2
+repeat until page not found error:
+    download "http://www.nihonkiin.or.jp/news/index_[n].html"
+    add links to pages_to_visit if the link is in the list of news articles
+    n = n + 1
+repeat until pages_to_visit empty:
+    pop url from pages_to_visit
+    download and save page
+later analyze all pages to extract the actual news text
+    </pre>
+    <p>Scripts to download news pages: <em>crawl_news_1.rb</em> and <em>crawl_news_2.rb</em></p>
+
+    <h2>Extract text from downloads</h2>
+    <p>Script to extract text from downloaded commentary pages: <em>extract_commentary.rb</em></p>
+    <p>Script to extract text from downloaded wikipedia pages: <em>extract_wikipedia.rb</em></p>
+    <p>Script to extract text from downloaded news pages: <em>extract_news.rb</em></p>
+
+    <h2>Create a dictionary database</h2>
+    <p>Data from the <a href="http://www.csse.monash.edu.au/~jwb/jmdict.html">JMDict</a> project is used to create the dictionary database.</p>
+    <p>We will look for words <em>and</em> names and so the following dictionary files are needed:</p>
+    <ul>
+        <li><a href="ftp://ftp.monash.edu.au/pub/nihongo/JMdict_e.gz">JMdict_e</a> (English-language only subset of the Japanese-Multilingual Dictionary). This is a zipped file, extract it and rename it to <code>dict.xml</code></li>
+        <li><a href="ftp://ftp.monash.edu.au/pub/nihongo/JMnedict.xml.gz">JMnedict.xml</a> (Japanese Proper Names Dictionary). This is a zipped file, extract it and rename it to <code>names.xml</code></li>
+    </ul>
+    <p>Below is a subset of the conceptual model of <strong>JMDict</strong>. Only parts that are relevant to this exercise are included. The terminology used is the one in the xml file.</p>
+    <img src="jmdict.png" />
+    <p>Below is a subset of the conceptual model of <strong>JMnedict</strong>. Only parts that are relevant to this exercise are included. The terminology used is the one in the xml file.</p>
+    <img src="jmnedict.png" />
+    <p>Integrated, with the added concept <code>lookup item</code>. The terminology is changed to something more intuitive.</p>
+    <img src="schema.png" />
+    <p>Relational schema:</p>
+    <pre>
+entry (id*)
+dictionary_entry (id* [fk to entry], seq_nbr)
+name_entry (id* [fk to entry])
+lookup_item (id*, characters)
+kanji_representation (id*, entry_id [fk to entry], word, lookup_item_id [fk to lookup_item])
+reading (id*, entry_id [fk to entry], word)
+meaning (id*, entry_id [fk to entry])
+translation (id*, word)
+meaning_translation (meaning_id [fk to meaning], translation_id [fk to translation])
+information (code*, description)
+part_of_speech (meaning_id [fk to meaning], information_code [fk to information])
+    </pre>
+    <p>Script to create database: <em>create_database.sql</em></p>
+    <p>Script to create tables: <em>create_tables.sql</em></p>
+    <p>Script to create database indexes useful during the upload of data: <em>create_indexes_1.sql</em></p>
+    <p>Script to populate database with dictionary entries (161'722 as of 2012-04-03): <em>upload_dict.rb</em></p>
+    <p>Script to populate database with name entries (730'986 as of 2012-04-03): <em>upload_names.rb</em></p>
+    <p>Script to create the remaining database indexes and constraints: <em>create_indexes_2.sql</em></p>
+
+    <h2>Frequency analysis</h2>
+    <p>Script to count the number of occurances of words in a file: <em>count.rb</em></p>
+    <p>Run with:</p>
+    <pre>
+ruby count.rb extracted_commentary.jtxt
+ruby count.rb extracted_wikipedia.jtxt
+ruby count.rb extracted_news.jtxt
+    </pre>
+    <p>The program creates the following files on each run:</p>
+    <table>
+        <tr><td><code>word_frequency_[commentary/wikipedia/news].html</code></td><td></td></tr>
+        <tr><td><code>word_frequency_[commentary/wikipedia/news]_common.html</code></td><td>Only includes words with a frequency greater than 1 in 10'000</td></tr>
+        <tr><td><code>word_frequency_[commentary/wikipedia/news]_long.html</code></td><td>Includes dictionary data in the report</td></tr>
+        <tr><td><code>word_frequency_[commentary/wikipedia/news].xml</code></td><td></td></tr>
+        <tr><td><code>visited_pages_[commentary/wikipedia/news].html</code></td><td>A list of all analyzed pages</td></tr>
+    </table>
+</body>
