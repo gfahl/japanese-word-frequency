@@ -1,0 +1,23 @@
+collect go terminology not in JMDict
+	Go Terminology.ods
+	look for terminology lists on Internet
+	go titles
+create scripts to add these words to the database used for counting word frequency
+re-run scripts to download and analyze go pages
+
+make a copy of old database to be able to compare results
+	-- run as root
+	CREATE DATABASE dict_old CHARACTER SET utf8 COLLATE utf8_bin;
+	GRANT ALL ON dict_old.* TO 'dict'@'localhost' WITH GRANT OPTION;
+
+	mysqldump -u dict -pwelcome dict | mysql -D dict_old -u dict -pwelcome
+
+rename old database
+	mysql -u root -p -e "CREATE DATABASE dict_old_2 CHARACTER SET utf8 COLLATE utf8_bin"
+	mysql -u root -p -e "GRANT ALL ON dict_old_2.* TO 'dict'@'localhost' WITH GRANT OPTION"
+	mysqldump -u dict -pwelcome dict | mysql -D dict_old_2 -u dict -pwelcome
+	mysql -u root -p -e "DROP DATABASE dict"
+
+to do
+	remove links to jisho.org for my entries
+	drop database dict_old

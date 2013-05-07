@@ -7,6 +7,8 @@ DROP TABLE IF EXISTS reading;
 DROP TABLE IF EXISTS kanji_representation;
 DROP TABLE IF EXISTS lookup_item;
 DROP TABLE IF EXISTS name_entry;
+DROP TABLE IF EXISTS my_entry;
+DROP TABLE IF EXISTS jmdict_entry;
 DROP TABLE IF EXISTS dictionary_entry;
 DROP TABLE IF EXISTS entry;
 
@@ -16,8 +18,16 @@ CREATE TABLE entry (
 	);
 
 CREATE TABLE dictionary_entry (
+	id INT NOT NULL
+	);
+
+CREATE TABLE jmdict_entry (
 	id INT NOT NULL,
 	seq_nbr INT NOT NULL
+	);
+
+CREATE TABLE my_entry (
+	id INT NOT NULL
 	);
 
 CREATE TABLE name_entry (

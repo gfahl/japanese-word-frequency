@@ -2,6 +2,7 @@
 require 'dbi'
 
 dbh = DBI.connect("DBI:Mysql:dict:localhost", "dict", "welcome")
+# dbh = DBI.connect("DBI:Mysql:dict_old:localhost", "dict", "welcome")
 dbh.do("SET NAMES 'utf8'")
 dbh.do("SET SESSION sql_mode = 'TRADITIONAL'")
 
@@ -14,8 +15,8 @@ visited_pages = []
 i = 0
 puts "Counting..."
 File.open(source, "r") do |f|
-  # while (i < 500 && s = f.gets)
-  while (s = f.gets)
+  while (i < 500 && s = f.gets)
+  # while (s = f.gets)
     s.force_encoding("UTF-8")
     s.gsub!("'", "_") # messes up SQL strings and we're not interested in them anyway
     $stderr.print("\x08" * 6, i) if (i += 1) % 100 == 0
@@ -150,11 +151,15 @@ sql_get_kanji_representations = <<EOF
 SELECT  kr.word,
         e.id,
         de.id,
+        je.id,
+        me.id,
         ne.id
 FROM    lookup_item li
         JOIN kanji_representation kr ON li.id = kr.lookup_item_id
         JOIN entry e ON kr.entry_id = e.id
         LEFT OUTER JOIN dictionary_entry de ON e.id = de.id
+        LEFT OUTER JOIN jmdict_entry je ON de.id = je.id
+        LEFT OUTER JOIN my_entry me ON de.id = me.id
         LEFT OUTER JOIN name_entry ne ON e.id = ne.id
 WHERE   li.characters = ?
 ORDER BY kr.word
@@ -191,7 +196,7 @@ count.each_with_index do |charcters_and_cnt, i|
   names = []
   show_lookup = true
   dbh.select_all(sql_get_kanji_representations, characters).each do |row|
-    word, entry_id, de_id, ne_id = row
+    word, entry_id, de_id, je_id, me_id, ne_id = row
     word.force_encoding("UTF-8")
     if de_id
       words << word
@@ -216,7 +221,7 @@ count.each_with_index do |charcters_and_cnt, i|
           sub("%meaning%", translations)
         show_lookup = false
         show_entry = false
-      else
+      elsif ne_id
         names << translations
       end
     end

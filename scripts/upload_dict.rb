@@ -7,6 +7,7 @@ dbh.do("SET NAMES 'utf8'")
 dbh.do("SET SESSION sql_mode = 'TRADITIONAL'")
 dbh['AutoCommit'] = false
 
+failures = []
 File.open("dict.xml") do |f|
   puts "Parsing XML..."
   doc = Nokogiri::XML(f)
@@ -21,10 +22,12 @@ File.open("dict.xml") do |f|
   puts "Inserting entries..."
   i = 0
   doc.xpath("JMdict/entry").each do |e|
+    seq_nbr = e.at_xpath("ent_seq").text
     $stderr.print("\x08" * 6, i) if (i += 1) % 100 == 0
     dbh.do("insert into entry () values ()")
     entry_id = dbh.func(:insert_id)
-    dbh.do("insert into dictionary_entry (id, seq_nbr) values (?, ?)", entry_id, e.at_xpath("ent_seq").text)
+    dbh.do("insert into dictionary_entry (id) values (?)", entry_id)
+    dbh.do("insert into jmdict_entry (id, seq_nbr) values (?, ?)", entry_id, seq_nbr)
     #
     pos_list = [] # this entry's part-of-speech
     e.xpath("sense").each do |meaning|
@@ -50,14 +53,23 @@ File.open("dict.xml") do |f|
     e.xpath("k_ele").each do |k_ele|
       word = k_ele.at_xpath("keb").text
       lookup = pos_list.find { |pos| pos == "adj-i" || pos =~ /^v[15]/ } ? word[0..-2] : word
+# p word
+# p word.encoding
       res = dbh.select_one("select id from lookup_item where characters = ?", lookup)
       lookup_item_id =
         if res then res[0]
         else
-          dbh.do("insert into lookup_item (characters) values (?)", lookup)
-          dbh.func(:insert_id)
+          begin
+            dbh.do("insert into lookup_item (characters) values (?)", lookup)
+            dbh.func(:insert_id)
+          rescue Exception => ex
+            failures << [seq_nbr, ex]
+            nil
+          end
         end
-      dbh.do("insert into kanji_representation (entry_id, word, lookup_item_id) values (?, ?, ?)", entry_id, word, lookup_item_id)
+      if lookup_item_id
+        dbh.do("insert into kanji_representation (entry_id, word, lookup_item_id) values (?, ?, ?)", entry_id, word, lookup_item_id)
+      end
     end
     e.xpath("r_ele").each do |r_ele|
       dbh.do("insert into reading (entry_id, word) values (?, ?)", entry_id, r_ele.at_xpath("reb").text)
@@ -66,5 +78,7 @@ File.open("dict.xml") do |f|
   end
   $stderr.print("\x08" * 6, i, "\n")
 end
+puts "Failures:"
+failures.each { |f| puts "%s: %s" % f }
 dbh.commit
 puts Time.now

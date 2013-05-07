@@ -1,0 +1,74 @@
+ruby upload_go.rb
+	C:\Users\Gustav\Git Projects\japanese-word-frequency\scripts>ruby upload_go.rb
+	2013-05-08 10:12:40 +0100
+	Before:
+	entry: 892708
+	go_entry: 0
+	kanji_representation: 813081
+	lookup_item: 665192
+	reading: 907805
+	meaning: 907834
+	part_of_speech: 952430
+	information: 123
+	Inserting into part-of-speech lookup table...
+	Inserting entries...
+	After:
+	entry: 893332
+	go_entry: 624
+	kanji_representation: 813903
+	lookup_item: 665699
+	reading: 908443
+	meaning: 908458
+	part_of_speech: 953054
+	information: 124
+	2013-05-08 10:13:01 +0100
+
+cd C:\Users\Gustav\Git Projects\japanese-word-frequency\scripts
+mysql -u root -p
+drop database dict;
+drop user 'dict'@'localhost';
+source create_database.sql
+mysql -D dict -u dict -pwelcome
+source create_tables.sql
+source create_indexes_1.sql
+ruby upload_dict.rb
+	2013-05-09 23:45:28 +0100
+	Parsing XML...
+	Inserting into part-of-speech lookup table...
+	Inserting entries...
+	169037
+	Failures:
+	1000525: Incorrect string value: '\xF0\xA9\xBA\x8A' for column 'characters' at row 1
+	1011650: Incorrect string value: '\xF0\xA9\xB8\xBD' for column 'characters' at row 1
+	2127910: Incorrect string value: '\xF0\xA5\x9D\xB1' for column 'characters' at row 1
+	2013-05-10 00:01:58 +0100
+ruby upload_names.rb
+	2013-05-10 00:05:51 +0100
+	Parsing XML...
+	Inserting into part-of-speech lookup table...
+	Inserting entries...
+	738657
+	2013-05-10 01:05:30 +0100
+ruby upload_my.rb
+	2013-05-10 11:49:34 +0100
+	Inserting into part-of-speech lookup table...
+	Inserting entries...
+	2013-05-10 11:49:38 +0100
+mysql -D dict -u dict -pwelcome
+source create_indexes_2.sql
+ruby count.rb extracted_commentary.jtxt
+ruby count.rb extracted_wikipedia.jtxt
+ruby count.rb extracted_news.jtxt
+
+mysql -D dict_old -u dict -pwelcome
+
+ruby upload_go.rb
+
+select count(*) from entry;
+select count(*) from go_entry;
+select count(*) from kanji_representation;
+select count(*) from lookup_item;
+select count(*) from reading;
+select count(*) from meaning;
+select count(*) from part_of_speech;
+select count(*) from information;

@@ -2,6 +2,14 @@ ALTER TABLE dictionary_entry
 	ADD PRIMARY KEY (id),
 	ADD FOREIGN KEY (id) REFERENCES entry (id);
 
+ALTER TABLE jmdict_entry
+	ADD PRIMARY KEY (id),
+	ADD FOREIGN KEY (id) REFERENCES dictionary_entry (id);
+
+ALTER TABLE my_entry
+	ADD PRIMARY KEY (id),
+	ADD FOREIGN KEY (id) REFERENCES dictionary_entry (id);
+
 ALTER TABLE name_entry
 	ADD PRIMARY KEY (id),
 	ADD FOREIGN KEY (id) REFERENCES entry (id);
