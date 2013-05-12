@@ -15,9 +15,12 @@ File.open("go_terminology.txt", "r") do |f|
   f.gets # the first line contains column headers - ignore it
   while (s = f.gets)
     entry = s.force_encoding("utf-8").chomp.split("\t")
-    kanji_representations = entry[0..3].reject { |s| s == "" }
+    kanji_representations = entry[0..3].reject { |s| s !~ /[\u4E00-\u9FFF]/ } # has to have at least one CJK Unified Ideograph
+    next if kanji_representations.empty?
     readings = entry[4..5].reject { |s| s == "" }
     part_of_speech = entry[6]
+    translation = entry[7]
+    translation = "go: " + translation unless translation == "(go terminology)"
     dbh.do("insert into entry () values ()")
     entry_id = dbh.func(:insert_id)
     dbh.do("insert into dictionary_entry (id) values (?)", entry_id)
@@ -40,6 +43,9 @@ File.open("go_terminology.txt", "r") do |f|
     dbh.do("insert into meaning (entry_id) values (?)", entry_id)
     meaning_id = dbh.func(:insert_id)
     dbh.do("insert into part_of_speech (meaning_id, information_code) values (?, ?)", meaning_id, part_of_speech)
+    dbh.do("insert into translation (word) values (?)", translation)
+    translation_id = dbh.func(:insert_id)
+    dbh.do("insert into meaning_translation (meaning_id, translation_id) values (?, ?)", meaning_id, translation_id)
   end
 end
 

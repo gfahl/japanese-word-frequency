@@ -1,625 +1,697 @@
-kanji 1	kanji 2	kanji 3	kanji 4	kana 1	kana 2	part-of-speech
-煽る	アオる			あおる		v
-空き三角	アキ三角			あきさんかく		n
-悪手				あくしゅ		n
-アゴ				あご		n
-味	アジ			あじ		n
-足が早い				あしがはやい		adj-i
-味消し				あじけし		n
-当たり	アタリ			あたり		n
-厚い				あつい		adj-i
-圧迫				あっぱく		n
-厚味	厚み			あつみ		n
-当て	アテ			あて		n
-当て返し	アテカエシ			あてかえし		n
-当て込み	アテ込み	アテコミ		あてこみ		n
-アテツギ				あてつぎ		n
-アテノビ				あてのび		n
-甘い	あまい			あまい		adj-i
-余し				あまし		n
-余り形	アマリ形			あまりがたち		n
-良い	好い	いい		いい		adj-i
-生かす				いかす		v
-生き				いき		n
-囲碁				いご		n
-石				いし		n
-石の下				いしのした		n
-鼬の腹ヅケ	イタチの腹付け	イタチの腹ツケ		いたちのはらつけ	いたちのはらづけ	n
-一眼				いちがん		n
-一合升	一合マス			いちごうます		n
-一級				いっきゅう		n
-一局				いっきょく		n
-一間受け				いっけんうけ		n
-一間シマリ	一間ジマリ			いっけんしまり	いっけんじまり	n
-一間高ガカリ				いっけんたかがかり		n
-一間高バサミ				いっけんたかばさみ		n
-一間トビ				いっけんとび		n
-一間バサミ				いっけんばさみ		n
-一間開き				いっけんびらき		n
-一手				いって		n
-一手ヨセ劫	一手ヨセコウ			いってよせこう		n
-一方地				いっぽうじ		n
-一本道				いっぽんみち		n
-犬の顔				いぬのかお		n
-芋筋				いもすじ		n
-院生				いんせい		n
-引退碁				いんたいご		n
-上				うえ		n
-上ツケ				うえつけ		n
-浮き石				うきいし		n
-受け				うけ		n
-薄い				うすい		adj-i
-内				うち		n
-打ち欠き	ウチカキ			うちかき		n
-内側				うちがわ		n
-打ち込み	ウチコミ			うちこみ		n
-打ち込む				うちこむ		v
-打ちすぎ				うちすぎ		n
-内ヅケ				うちづけ		n
-宇宙流				うちゅうりゅう		n
-打つ				うつ		v
-打って返し	打ッテ返シ	ウッテガエシ		うってがえし		n
-右辺				うへん		n
-巧い	上手い	うまい		うまい		adj-i
-馬面				うまずら		n
-馬の顔				うまのかお		n
-うわ手				うわて		n
-えぐり	エグリ			えぐり		n
-追い落とし	オイオトシ			おいおとし		n
-王座				おうざ		n
-応手				おうしゅ		n
-大				おお		n
-大きい				おおきい		adj-i
-大ゲイマ				おおげいま		n
-大ゲイマカカリ				おおげいまかかり		n
-大ゲイマガカリ				おおげいまがかり		n
-大ゲイマカケ				おおげいまかけ		n
-大ゲイマガケ				おおげいまがけ		n
-大ゲイマシマリ				おおげいましまり		n
-大ゲイマジマリ				おおげいまじまり		n
-大ゲイマスベリ				おおげいますべり		n
-大ゲイマビラキ				おおげいまびらき		n
-大ザル				おおざる		n
-大高目				おおたかもく		n
-大手合				おおてあい		n
-大ナダレ				おおなだれ		n
-大場				おおば		n
-大目ハズシ				おおもくはずし		n
-大模様	大モヨウ			おおもよう		n
-大ヨセ				おおよせ		n
-置き	オキ			おき		n
-置き石				おきいし		n
-置き碁	置キ碁			おきご		n
-押さえ	オサエ			おさえ		n
-押し	オシ			おし		n
-オシギリ				おしぎり		n
-押しつぶし	オシツブシ			おしつぶし		n
-脅かす				おびやかす		v
-重い				おもい		adj-i
-オリ切り	オリキリ			おりきり		n
-外勢				がいせい		n
-抱え	カカエ			かかえ		n
-カカエツギ				かかえつぎ		n
-掛かり	カカリ			かかり		n
-格言				かくげん		n
-確定地				かくていじ		n
-鶴翼の陣				かくよくのじん		n
-掛け	カケ			かけ		n
-カケツギ				かけつぎ		n
-欠け目	欠け眼	カケ眼		かけめ		n
-カケ眼生き				かけめいき		n
-囲い				かこい		n
-肩	カタ			かた		n
-固い	堅い			かたい		adj-i
-方先手				かたせんて		n
-形				かたち		n
-肩ツキ	カタツキ			かたつき		n
-堅ツギ	カタツギ			かたつぎ		n
-固まる				かたまる		v
-固める				かためる		v
-勝ち				かち		n
-勝つ				かつ		v
-活				かつ		n
-角	カド			かど		n
-要石				かなめいし		n
-被せる	カブセル			かぶせる		v
-壁				かべ		n
-下辺				かへん		n
-亀の甲	亀の甲羅			かめのこう	かめのこうら	n
-鴨				かも		n
-辛い				からい		adj-i
-絡み	カラミ			からみ		n
-軽い				かるい		adj-i
-側				かわ		n
-眼形				がんけい	めがたち	n
-関西棋院				かんさいきいん		n
-観音開き	観音ビラキ			かんのんびらき		n
-完敗				かんぱい		n
-肝要				かんよう		n
-棋				き		n
-気合い				きあい		n
-利かし	キカし			きかし		n
-利き				きき		n
-危険				きけん		n
-棋士				きし		n
-キズ				きず		n
-棋聖				きせい		n
-棋戦				きせん		n
-厳しい	きびしい			きびしい		adj-i
-棋譜				きふ		n
-決め手				きめて		n
-逆コミ				ぎゃくこみ		n
-逆先手				ぎゃくせんて		n
-逆寄せ	逆ヨセ			ぎゃくよせ		n
-級				きゅう		n
-九子局				きゅうしきょく		n
-急所				きゅうしょ		n
-急場				きゅうば		n
-強手				きょうしゅ		n
-切り	キリ			きり		n
-キリ込み	キリコミ			きりこみ		n
-キリサガリ				きりさがり		n
-切り違え	キリ違え			きりちがえ		n
-キリノビ				きりのび		n
-麒麟の首	キリンの首			きりんのくび		n
-切る				きる		v
-愚形				ぐけい		n
-クシ型				くしがた		n
-櫛形	クシ形			くしがたち		n
-崩す				くずす		v
-グズミ				ぐずみ		n
-苦戦				くせん		n
-ぐるぐる回し	グルグル回し			ぐるぐるまわし		n
-黒				くろ		n
-黒い				くろい		adj-i
-黒先				くろせん		n
-黒番				くろばん		n
-形勢				けいせい		n
-桂馬	ケイマ			けいま		n
-ケイマカカリ	ケイマガカリ			けいまかかり	けいまがかり	n
-ケイマカケ	ケイマガケ			けいまかけ	けいまがけ	n
-桂馬ツギ	ケイマツギ			けいまつぎ		n
-ケイマツケ				けいまつけ		n
-ケイマワタリ				けいまわたり		n
-消し				けし		n
-消す				けす		v
-下駄	ゲタ			げた		n
-間				けん		n
-見当				けんとう		n
-小				こ		n
-碁				ご		n
-碁石				ごいし		n
-劫	コウ			こう		n
-劫争い	コウ争い			こうあらそい		n
-劫材	コウ材			こうざい		n
-小ザル				こうざる		n
-好手				こうしゅ		n
-巧手				こうしゅ		n
-劫ダテ	コウダテ			こうだて		n
-コウ取り	コウトリ			こうとり		n
-互角				ごかく		n
-碁器				ごき		n
-碁笥				ごけ		n
-小桂馬	小ゲイマ			こげいま		n
-小ゲイマカカリ	小ゲイマガカリ			こげいまかかり	こげいまがかり	n
-小ゲイマシマリ	小ゲイマジマリ			こげいましまり	こげいまじまり	n
-小ゲイマスベリ	小ゲイマのスベリ			こげいますべり	こげいまのすべり	n
-五間ビラキ				ごけんびらき		n
-コスミ				こすみ		n
-コスミカケ	コスミガケ			こすみかけ	こすみがけ	n
-コスミ出し				こすみだし		n
-コスミツケ				こすみつけ		n
-碁聖				ごせい		n
-後手				ごて		n
-後手の先手				ごてのせんて		n
-諺				ことわざ		n
-小ナダレ				こなだれ		n
-碁盤				ごばん		n
-細かい				こまかい		adj-i
-ごまかし手	ゴマカシ手			ごまかして		n
-コミ				こみ		n
-小目				こもく		n
-五目中手	五目ナカデ			ごもくなかで		n
-凝り形	コリ形			こりがたち		n
-殺す				ころす		v
-根拠				こんきょ		n
-下がり	サガリ			さがり		n
-作戦				さくせん		n
-サシ込み	サシコミ			さしこみ		n
-サバキ				さばき		n
-左辺				さへん		n
-左右同形	左右同型			さゆうどうけい		n
-ざる碁	ザル碁			ざるご		n
-サルスベリ				さるすべり		n
-三間高バサミ				さんげんたかばさみ		n
-三間トビ				さんげんとび		n
-三間バサミ				さんげんばさみ		n
-三間ビラキ				さんげんびらき		n
-三劫	三コウ			さんこう		n
-三々				さんさん		n
-三々打ち込み				さんさんうちこみ		n
-三々のシマリ				さんさんのしまり		n
-三羽ガラス				さんばがらす		n
-三目中手				さんもくなかで		n
-三連星				さんれんせい		n
-子				し		n
-死				し		n
-地				じ		n
-地合	地あい			じあい		n
-死活				しかつ		n
-持碁	ジゴ			じご		n
-下				した		n
-下ツケ				したつけ		n
-下手	した手			したて		n
-下ハネ				したはね		n
-下バネ				したばね		n
-シチョウ	シチョー			しちょう		n
-シチョウアタリ				しちょうあたり		n
-失着				しっちゃく		n
-失敗				しっぱい		n
-実利				じつり		n
-指導碁				しどうご		n
-死に石				しにいし		n
-死に形				しにがたち		n
-死ぬ				しぬ		n
-凌ぎ	シノギ			しのぎ		n
-絞り	シボリ			しぼり		n
-絞る	シボる			しぼる		v
-締まり	シマリ			しまり		n
-シメツケ				しめつけ		n
-地模様	地モヨウ			じもよう		n
-弱点				じゃくてん		n
-終局				しゅうきょく		n
-秀策流				しゅうさくりゅう		n
-十段				じゅうだん		n
-終盤				しゅうばん		n
-十番碁				じゅうばんご		n
-終盤戦				しゅうばんせん		n
-十分				じゅうぶん		n
-消去				しょうきょ		n
-状況				じょうきょう		n
-上手				じょうず		n
-定石				じょうせき		n
-定先				じょうせん		n
-勝負				しょうぶ		n
-上辺				じょうへん		n
-初級				しょきゅう		n
-初段				しょだん		n
-序盤				じょばん		n
-序盤戦				じょばんせん		n
-白				しろ		n
-白い				しろい		adj-i
-白番				しろばん		n
-陣笠				じんがさ		n
-新布石				しんふせき		n
-新聞碁				しんぶんご		n
-侵略				しんりゃく		n
-図				ず		n
-筋				すじ		n
-筋悪				すじわる		n
-裾空き	スソ空き	スソあき	スソアキ	すそあき		n
-裾ガカリ	スソガカリ			すそがかり		n
-スソ払い				すそばらい		n
-捨て石				すていし		n
-捨てる				すてる		v
-滑り	スベリ			すべり		n
-滑る	スベる			すべる		v
-隅	スミ			すみ		n
-隅の曲がり四目	スミの曲がり四目			すみのまがりしもく		n
-正解				せいかい		n
-成功				せいこう		n
-井目				せいもく		n
-井目風鈴				せいもくふうりん		n
-勢力				せいりょく		n
-セキ				せき		n
-セキ生き				せきいき		n
-石塔絞り	石塔シボリ			せきとうしぼり		n
-切断				せつだん		n
-攻め				せめ		n
-攻め合い	セメアイ			せめあい		n
-攻め取り	セメドリ			せめどり		n
-攻める				せめる		v
-戦				せん		n
-線				せん		n
-先相先				せんあいせん		n
-全局				ぜんきょく		n
-先生				せんせい		n
-先手				せんて		n
-先二				せんに		n
-全滅				ぜんめつ		n
-俗				ぞく		n
-俗手				ぞくしゅ		n
-俗筋				ぞくすじ		n
-側面				そくめん		n
-外				そと		n
-外側				そとがわ		n
-外ダメ				そとだめ		n
-外ヅケ				そとづけ		n
-外マガリ				そとまがり		n
-側劫	ソバ劫	ソバコウ		そばこう		n
-損				そん		n
-対局				たいきょく		n
-対策				たいさく		n
-大斜				たいしゃ		n
-大石				たいせき		n
-大々ゲイマ				だいだいげいま		n
-大々ゲイマガカケ	大々ゲイマガガケ			だいだいげいまがかけ		n
-大々ゲイマガカリ				だいだいげいまがかり		n
-大々ゲイマスベリ				だいだいげいますべり		n
-大々ゲイマビラキ				だいだいげいまびらき		n
-高い				たかい		adj-i
-互先				たがいせん		n
-高ガカリ				たかがかり		n
-高ゲイマジマリ				たかげいまじまり		n
-高目				たかもく		n
-巧み				たくみ		n
-竹節	タケフ			たけふ		n
-出し	ダシ			だし		n
-襷型	タスキ型			たすきがた		n
-戦い				たたかい		n
-戦う				たたかう		v
-正しい				ただしい		adj-i
-立ち				たち		n
-脱出				だっしゅつ		n
-狸の腹鼓	狸の腹つづみ			たぬきのはらつづみ		n
-種石	タネ石			たねいし		n
-騙し手	だまし手			だまして		n
-駄目	ダメ			だめ		n
-駄目ヅマリ	ダメ詰まり	ダメヅマリ		だめづまり		n
-ダメヅメ				だめづめ		n
-段				だん		n
-団子	ダンゴ			だんご		n
-小さい				ちいさい		adj-i
-チギリ				ちぎり		n
-チキリトビ				ちきりとび		n
-縮める				ちじめる		v
-中央				ちゅうおう		n
-中押勝	中押勝ち			ちゅうおしがち		n
-中国流				ちゅうごくりゅう		n
-中国流布石				ちゅうごくりゅうふせき		n
-中盤				ちゅうばん		n
-中盤戦				ちゅうばんせん		n
-調子				ちょうし		n
-長生				ちょうせい		n
-挑戦				ちょうせん		n
-挑戦者				ちょうせんしゃ		n
-挑戦手合				ちょうせんてあい		n
-直四目				ちょくしもく		n
-珍瓏				ちんろう		n
-ツギ				つぎ		n
-突き当たり	ツキアタリ			つきあたり		n
-突き出し	ツキダシ			つきだし		n
-次の一手				つぎのいって		n
-ツグ				つぐ		v
-付け	ツケ			つけ		n
-ツケオサエ				つけおさえ		n
-付け返し	ツケ返し			つけかえし		n
-付けギリ	ツケギリ			つけぎり		n
-付けコシ	ツケコシ			つけこし		n
-ツケノビ				つけのび		n
-付けハネ	ツケハネ			つけはね		n
-付け引き	ツケヒキ			つけひき		n
-付けフクレ	ツケフクレ			つけふくれ		n
-突込み	ツッコミ			つっこみ		n
-突張り	ツッパリ			つっぱり		n
-ツナギ				つなぎ		n
-つぶれる				つぶれる		v
-ツメ				つめ		n
-詰碁				つめご		n
-詰める				つめる		v
-強い				つよい		adj-i
-鶴ノ巣籠り	鶴の巣ごもり			つるのすごもり		n
-手				て		n
-出	デ			で		n
-手合				てあい		n
-手入れ				ていれ		n
-敵				てき		n
-出切り	デギリ			でぎり		n
-手順				てじゅん		n
-手筋				てすじ		n
-鉄柱				てっちゅう		n
-手止まり				てどまり		n
-手抜き				てぬき		n
-手番				てばん		n
-出る				でる		v
-手割り				てわり		n
-天狗の鼻付け				てんぐのはなづけ		n
-天元				てんげん		n
-トーチカ				とーちか		n
-投了				とうりょう		n
-徳利	トックリ			とっくり		n
-飛び	跳び	トビ		とび		n
-トビ込み	トビコミ			とびこみ		n
-トビサガリ				とびさがり		n
-飛び出し	トビ出し	トビダシ		とびだし		n
-トビツケ				とびつけ		n
-トビマガリ				とびまがり		n
-取り	トリ			とり		n
-取り返し	トリカエシ			とりかえし		n
-トリカケ				とりかけ		n
-取る				とる		v
-トントン				とんとん		n
-中手	ナカデ			なかで		n
-投げ場				なげば		n
-投げる				なげる		v
-雪崩	ナダレ			なだれ		n
-七目中手				ななもくなかで		n
-ナマノゾキ				なまのぞき		n
-並び	ナラビ			ならび		n
-逃がす				にがす		v
-二眼				にがん		n
-握り	にぎり	ニギリ		にぎり		n
-逃げ出し				にげだし		n
-逃げる				にげる		v
-二間受け				にけんうけ		n
-二間シマリ				にけんしまり		n
-二間ジマリ				にけんじまり		n
-二間高ガカリ				にけんたかがかり		n
-二間高ジマリ				にけんたかじまり		n
-二間高バサミ				にけんたかばさみ		n
-二間トビ				にけんとび		n
-二間バサミ				にけんばさみ		n
-二間ビラキ				にけんびらき		n
-二子の頭	二子のアタマ			にしのあたま		n
-二段				にだん		n
-二段オサエ				にだんおさえ		n
-二段劫	二段コウ			にだんこう		n
-二段バネ				にだんばね		n
-２の一	二の一	二ノ一		にのいち		n
-日本棋院				にほんきいん		n
-二連星				にれんせい		n
-抜き	ヌキ			ぬき		n
-抜く				ぬく		v
-ぬるい				ぬるい		adj-i
-ノゾキ				のぞき		n
-伸び	ノビ			のび		n
-ノビ込み	ノビコミ			のびこみ		n
-ノビ出し	ノビダシ			のびだし		n
-敗				はい		n
-杯				はい		n
-這い	這イ	ハイ		はい		n
-ハイコミ				はいこみ		n
-配置				はいち		n
-ハザマ				はざま		n
-ハザマスベリ				はざますべり		n
-ハザマトビ				はざまとび		n
-挟み	ハサミ			はさみ		n
-ハサミ返し	ハサミカエシ			はさみかえし		n
-ハサミツケ				はさみつけ		n
-走り	ハシリ			はしり		n
-バタバタ				ばたばた		n
-鼻				はな		n
-鼻付け	鼻ツケ	鼻ヅケ		はなつけ	はなづけ	n
-花見劫	花見コウ			はなみこう		n
-花六				はなろく		n
-ハネ				はね		n
-ハネ返し	ハネカエシ			はねかえし		n
-ハネキリ				はねきり		n
-ハネ込み				はねこみ		n
-ハネ殺し				はねごろし		n
-ハネ出し	ハネダシ			はねだし		n
-ハネツギ				はねつぎ		n
-幅				はば		n
-ハマ				はま		n
-嵌まり	はまり	ハマリ		はまり		n
-嵌め手	はめ手	ハメ手		はめて		n
-ハメ手破り				はめてやぶり		n
-早い				はやい		adj-i
-早碁				はやご		n
-腹				はら		n
-腹付け	腹ツケ	腹ヅケ		はらつけ	はらづけ	n
-半眼				はんがん		n
-反撃				はんげき		n
-番碁				ばんご		n
-半劫	半コウ			はんこう		n
-半目				はんもく		n
-半目勝負				はんもくしょうぶ		n
-ヒカルの碁				ひかるのご		n
-引き				ひき		n
-引く				ひく		v
-低い				ひくい		adj-i
-低ガカリ				ひくがかり		n
-左				ひだり		n
-引っくり返し				ひっくりかえし		n
-秒読み				びょうよみ		n
-開き	ヒラキ			ひらき		n
-広い				ひろい		adj-i
-広げる				ひろげる		v
-ピンツギ				ぴんつぎ		n
-封鎖				ふうさ		n
-封じ手				ふうじて		n
-フクラミ				ふくらみ		n
-フクレ				ふくれ		n
-布石				ふせき		n
-ブツカリ				ぶつかり		n
-フトコロ				ふところ		n
-ブラ下がり	ブラサガリ			ぶらさがり		n
-不利				ふり		n
-振り替わり	フリカワリ			ふりかわり		n
-ヘコミ				へこみ		n
-下手	ヘタ			へた		n
-へぼ	ヘボ			へぼ		n
-辺				へん		n
-変化				へんか		n
-包囲				ほうい		n
-方向				ほうこう		n
-帽子	ボウシ			ぼうし		n
-棒ツギ				ぼうつぎ		n
-放り込み	ホウリ込み	ホウリコミ		ほうりこみ		n
-ポカ				ぽか		n
-星	ホシ			ほし		n
-星のシマリ				ほしのしまり		n
-星ワキ				ほしわき		n
-本因坊				ほんいんぼう		n
-本劫	本コウ			ほんこう		n
-本手				ほんて		n
-ポン抜き	ポンヌキ			ぽんぬき		n
-曲がり	マガリ			まがり		n
-曲がり四目				まがりしもく		n
-曲がり付け	マガリツケ			まがりつけ		n
-曲げ	マゲ			まげ		n
-曲げ付け	マゲツケ			まげつけ		n
-負ける				まける		v
-間違い				まちがい		n
-まとまり				まとまり		n
-真似碁	まね碁	マネ碁		まねご		n
-守り				まもり		n
-守る				まもる		v
-万年劫	万年コウ			まんねんこう		n
-見合い				みあい		n
-右				みぎ		n
-ミニ中国流				みにちゅうごくりゅう		n
-妙手				みょうしゅ		n
-向かい小目				むかいこもく		n
-無劫	無コウ			むこう		n
-無勝負				むしょうぶ		n
-村正の妖刀				むらまさのようとう		n
-無理				むり		n
-目	眼			め		n
-眼あり眼なし	目あり目なし	メアリメナシ		めありめなし		n
-名人				めいじん		n
-眼形				めがたち	がんけい	n
-目	モク			もく		n
-目外し	目ハズシ			もくはずし		n
-モタレ				もたれ		n
-模様	モヨウ			もよう		n
-櫓				やぐら		n
-破る				やぶる		v
-破れる				やぶれる		v
-優勢				ゆうせい		n
-ゆるみシチョウ	ユルミシチョウ			ゆるみしちょう		n
-良い	好い			よい	いい	adj-i
-様子見				ようすみ		n
-様子見る				ようすみる		v
-様子を見る	ようすを見る			ようすをみる		v
-横				よこ		n
-横ツケ				よこつけ		n
-横ヅッパリ				よこづっぱり		n
-寄せ	ヨセ			よせ		n
-寄せ劫	ヨセコウ			よせこう		n
-読み				よみ		n
-弱い				よわい		adj-i
-弱気				よわき		n
-四間ビラキ				よんけんびらき		n
-四目中手				よんもくなかで		n
-利				り		n
-両当たり				りょうあたり		n
-両ガカリ				りょうがかり		n
-両ガラミ				りょうがらみ		n
-両ゲイマ				りょうげいま		n
-両劫	両コウ			りょうこう		n
-両後手				りょうごて		n
-両先手				りょうせんて		n
-両にらみ				りょうにらみ		n
-両ノゾキ				りょうのぞき		n
-両バネ				りょうばね		n
-両翼の陣				りょうよくのじん		n
-冷静				れいせい		n
-連碁				れんご		n
-連続				れんぞく		n
-連絡				れんらく		n
-六目中手				ろくもくなかで		n
-渡り	ワタリ			わたり		n
-割り打ち				わりうち		n
-割り込み	ワリコミ			わりこみ		n
-悪い				わるい		adj-i
+kanji 1	kanji 2	kanji 3	kanji 4	kana 1	kana 2	Part-of-Speech	meaning
+煽る	アオる			あおる		v	(go terminology)
+空き三角	アキ三角			あきさんかく		n	(go terminology)
+悪手				あくしゅ		n	(go terminology)
+揚げ浜	揚浜			あげはま		n	captured stones kept in the Go bowl cover until the end of the game
+アゴ				あご		n	(go terminology)
+味	アジ			あじ		n	(go terminology)
+足が早い				あしがはやい		adj-i	(go terminology)
+味消し				あじけし		n	aji keshi
+当たり	アタリ			あたり		n	(go terminology)
+厚い				あつい		adj-i	(go terminology)
+圧迫				あっぱく		n	(go terminology)
+厚味	厚み			あつみ		n	thickness
+当て	アテ			あて		n	(go terminology)
+当て返し	アテ返し	アテカエシ		あてかえし		n	(go terminology)
+当て込み	アテ込み	アテコミ		あてこみ		n	(go terminology)
+当てツギ	アテツギ			あてつぎ		n	(go terminology)
+当てノビ	アテノビ			あてのび		n	(go terminology)
+アマ				あま		n	amateur
+甘い	あまい			あまい		adj-i	soft, loose, overly generous
+余し				あまし		n	(go terminology)
+余り形	アマリ形			あまりがたち		n	(go terminology)
+良い	好い	いい		いい		adj-i	(go terminology)
+生かす				いかす		v	(go terminology)
+生き				いき		n	(go terminology)
+生きる				いきる		n	to live with a group
+囲碁				いご		n	(go terminology)
+囲碁未来				いごみらい		n	Igo Mirai, monthly publication from Nihon Ki-in aimed at kyu players
+石				いし		n	(go terminology)
+石の下				いしのした		n	(go terminology)
+苛め				いじめ		n	the free sente moves you get by playing against weak positions
+鼬の腹ヅケ	イタチの腹付け	イタチの腹ツケ		いたちのはらつけ	いたちのはらづけ	n	(go terminology)
+一眼				いちがん		n	(go terminology)
+一合升	一合マス			いちごうます		n	(go terminology)
+一級				いっきゅう		n	(go terminology)
+一局				いっきょく		n	one game
+一間受け				いっけんうけ		n	(go terminology)
+一間シマリ	一間ジマリ			いっけんしまり	いっけんじまり	n	(go terminology)
+一間高ガカリ				いっけんたかがかり		n	(go terminology)
+一間高バサミ				いっけんたかばさみ		n	(go terminology)
+一間トビ				いっけんとび		n	(go terminology)
+一間バサミ				いっけんばさみ		n	(go terminology)
+一間開き				いっけんびらき		n	(go terminology)
+一子				いっし		n	one stone
+一手				いって		n	(go terminology)
+一手ヨセ劫	一手ヨセコウ			いってよせこう		n	(go terminology)
+一方地				いっぽうじ		n	(go terminology)
+一本道				いっぽんみち		n	(go terminology)
+犬の顔				いぬのかお		n	(go terminology)
+芋筋				いもすじ		n	(go terminology)
+院生				いんせい		n	(go terminology)
+引退碁				いんたいご		n	(go terminology)
+上				うえ		n	(go terminology)
+上付け	上ツケ			うえつけ		n	(go terminology)
+浮き石				うきいし		n	(go terminology)
+受け				うけ		n	answer, defense (to a move)
+薄い				うすい		adj-i	thin
+内				うち		n	(go terminology)
+打ち欠き	ウチカキ			うちかき		n	(go terminology)
+内側				うちがわ		n	(go terminology)
+打ち込み	ウチコミ			うちこみ		n	invasion
+打ち込む				うちこむ		v	(go terminology)
+打ちすぎ				うちすぎ		n	(go terminology)
+内ヅケ				うちづけ		n	(go terminology)
+宇宙流				うちゅうりゅう		n	(go terminology)
+打つ				うつ		v	(go terminology)
+打って返し	打ッテ返シ	ウッテガエシ		うってがえし		n	(go terminology)
+右辺				うへん		n	(go terminology)
+巧い	上手い	うまい		うまい		adj-i	(go terminology)
+馬面				うまずら		n	(go terminology)
+馬の顔				うまのかお		n	(go terminology)
+うわ手				うわて		n	(go terminology)
+えぐり	エグリ			えぐり		n	(go terminology)
+追い落とし	オイオトシ			おいおとし		n	(go terminology)
+王座				おうざ		n	the Oza title
+応手				おうしゅ		n	response
+大				おお		n	(go terminology)
+大石				おおいし		n	large group of stones, dragon
+大きい				おおきい		adj-i	(go terminology)
+大ゲイマ				おおげいま		n	(go terminology)
+大ゲイマカカリ				おおげいまかかり		n	(go terminology)
+大ゲイマガカリ				おおげいまがかり		n	(go terminology)
+大ゲイマカケ				おおげいまかけ		n	(go terminology)
+大ゲイマガケ				おおげいまがけ		n	(go terminology)
+大ゲイマシマリ				おおげいましまり		n	(go terminology)
+大ゲイマジマリ				おおげいまじまり		n	(go terminology)
+大ゲイマスベリ				おおげいますべり		n	(go terminology)
+大ゲイマビラキ				おおげいまびらき		n	(go terminology)
+大ザル				おおざる		n	(go terminology)
+大高目				おおたかもく		n	(go terminology)
+大手合				おおてあい		n	(go terminology)
+大中手	大ナカデ			おおなかで		n	big eye, i.e. an eye that has more liberties than the number of points inside it
+大ナダレ				おおなだれ		n	(go terminology)
+大場				おおば		n	(go terminology)
+大盤				おおばん		n	demonstration board
+大目ハズシ				おおもくはずし		n	(go terminology)
+大模様	大モヨウ			おおもよう		n	(go terminology)
+大ヨセ				おおよせ		n	(go terminology)
+置き	オキ			おき		n	(go terminology)
+置き石				おきいし		n	(go terminology)
+置き碁	置キ碁			おきご		n	(go terminology)
+押さえ	オサエ			おさえ		n	(go terminology)
+押し	オシ			おし		n	(go terminology)
+押し切り	オシギリ			おしぎり		n	(go terminology)
+押しつぶし	オシツブシ			おしつぶし		n	(go terminology)
+脅かす				おびやかす		v	(go terminology)
+重い				おもい		adj-i	(go terminology)
+オリ切り	オリキリ			おりきり		n	(go terminology)
+外勢				がいせい		n	(go terminology)
+抱え	カカエ			かかえ		n	(go terminology)
+カカエツギ				かかえつぎ		n	(go terminology)
+掛かり	カカリ			かかり		n	(go terminology)
+掛る				かかる		v	(go terminology)
+格言				かくげん		n	(go terminology)
+確定地				かくていじ		n	(go terminology)
+鶴翼の陣				かくよくのじん		n	(go terminology)
+掛け	カケ			かけ		n	(go terminology)
+カケツギ				かけつぎ		n	(go terminology)
+欠け目	欠け眼	カケ眼		かけめ		n	(go terminology)
+カケ眼生き				かけめいき		n	(go terminology)
+囲い				かこい		n	(go terminology)
+肩	カタ			かた		n	(go terminology)
+固い	堅い			かたい		adj-i	(go terminology)
+方先手				かたせんて		n	(go terminology)
+形				かたち		n	(go terminology)
+肩突き	肩ツキ	カタ突き	カタツキ	かたつき		n	shoulder hit
+堅ツギ	カタツギ			かたつぎ		n	(go terminology)
+固まる				かたまる		v	(go terminology)
+固める				かためる		v	(go terminology)
+勝ち				かち		n	(go terminology)
+勝つ				かつ		v	(go terminology)
+活				かつ		n	(go terminology)
+勝手読み				かってよみ		n	wishful reading, subconsciously ignoring good sequences for the opponent
+角	カド			かど		n	(go terminology)
+角番				かどばん		n	game within a series of games which, if lost, will lose the series or increase the handicap
+要石				かなめいし		n	(go terminology)
+被せる	カブセル			かぶせる		v	(go terminology)
+壁				かべ		n	(go terminology)
+下辺				かへん		n	(go terminology)
+神の一手				かみのいって		n	a divine move
+亀の甲	亀の甲羅			かめのこう	かめのこうら	n	(go terminology)
+鴨				かも		n	(go terminology)
+辛い				からい		adj-i	(go terminology)
+絡み	カラミ			からみ		n	(go terminology)
+軽い				かるい		adj-i	(go terminology)
+側				かわ		n	(go terminology)
+眼形				がんけい	めがたち	n	(go terminology)
+関西棋院				かんさいきいん		n	(go terminology)
+関西総本部				かんさいそうほんぶ		n	Kansai general headquarters (Nihon Ki-in Osaka branch)
+感想戦				かんそうせん		n	replay and analysis by the players just after the game has finished
+観音開き	観音ビラキ			かんのんびらき		n	(go terminology)
+完敗				かんぱい		n	(go terminology)
+肝要				かんよう		n	(go terminology)
+棋				き		n	(go terminology)
+気合い				きあい		n	(go terminology)
+利かし	キカし			きかし		n	kikashi
+利き				きき		n	(go terminology)
+危険				きけん		n	(go terminology)
+棋士				きし		n	(go terminology)
+キズ				きず		n	(go terminology)
+棋聖				きせい		n	the Kisei title
+棋戦				きせん		n	(go terminology)
+厳しい	きびしい			きびしい		adj-i	(go terminology)
+棋譜				きふ		n	kifu
+棋譜を並べる				きふをならべる		v	to replay the moves of a game
+決め手				きめて		n	(go terminology)
+逆コミ				ぎゃくこみ		n	(go terminology)
+逆先手				ぎゃくせんて		n	(go terminology)
+逆寄せ	逆ヨセ			ぎゃくよせ		n	(go terminology)
+級				きゅう		n	(go terminology)
+九子				きゅうし		n	nine stones
+九子局				きゅうしきょく		n	(go terminology)
+急所				きゅうしょ		n	(go terminology)
+急場				きゅうば		n	(go terminology)
+九路				きゅうろ		n	9x9
+強手				きょうしゅ		n	(go terminology)
+局後の検討				きょくあとのけんとう		n	replay and analysis by the players just after the game has finished
+切り	キリ			きり		n	(go terminology)
+キリ込み	キリコミ			きりこみ		n	(go terminology)
+切り下がり	切りサガリ	キリ下がり	キリサガリ	きりさがり		n	(go terminology)
+切り違い	キリ違い			きりちがい		n	crosscut
+切り違え	キリ違え			きりちがえ		n	crosscut
+切りノビ	キリノビ			きりのび		n	(go terminology)
+麒麟の首	キリンの首			きりんのくび		n	(go terminology)
+切る				きる		v	(go terminology)
+愚形				ぐけい		n	(go terminology)
+クシ型				くしがた		n	(go terminology)
+櫛形	クシ形			くしがたち		n	(go terminology)
+崩す				くずす		v	(go terminology)
+グズミ				ぐずみ		n	(go terminology)
+苦戦				くせん		n	(go terminology)
+九段				くだん		n	9 dan
+ぐるぐる回し	グルグル回し			ぐるぐるまわし		n	(go terminology)
+黒				くろ		n	(go terminology)
+黒い				くろい		adj-i	(go terminology)
+黒先				くろせん		n	(go terminology)
+黒番				くろばん		n	(go terminology)
+形勢				けいせい		n	(go terminology)
+桂馬	ケイマ			けいま		n	(go terminology)
+ケイマカカリ	ケイマガカリ			けいまかかり	けいまがかり	n	(go terminology)
+ケイマカケ	ケイマガケ			けいまかけ	けいまがけ	n	(go terminology)
+桂馬ツギ	ケイマツギ			けいまつぎ		n	(go terminology)
+ケイマツケ				けいまつけ		n	(go terminology)
+ケイマワタリ				けいまわたり		n	(go terminology)
+消し				けし		n	reduction
+消す				けす		v	to reduce
+下駄	ゲタ			げた		n	(go terminology)
+間				けん		n	(go terminology)
+見当				けんとう		n	(go terminology)
+検討室				けんとうしつ		n	the room where professionals are analyzing an important game while it is being played
+検討陣				けんとうじん		n	the professionals analysing an important game while it is being played
+権利				けんり		n	right; privilege (to play a move or sequence of moves)
+小				こ		n	(go terminology)
+碁				ご		n	(go terminology)
+碁石				ごいし		n	(go terminology)
+劫	コウ			こう		n	(go terminology)
+劫争い	コウ争い			こうあらそい		n	(go terminology)
+劫材	コウ材			こうざい		n	(go terminology)
+好手				こうしゅ		n	(go terminology)
+巧手				こうしゅ		n	(go terminology)
+劫立て	劫ダテ	コウ立て	コウダテ	こうだて		n	(go terminology)
+劫取り	劫トリ	コウ取り	コウトリ	こうとり		n	(go terminology)
+劫を解消する	コウを解消する			こうをかいしょうする		v	to resolve/finish a ko
+互角				ごかく		n	(go terminology)
+碁器				ごき		n	(go terminology)
+碁笥				ごけ		n	(go terminology)
+小桂馬	小ゲイマ			こげいま		n	(go terminology)
+小ゲイマカカリ	小ゲイマガカリ			こげいまかかり	こげいまがかり	n	(go terminology)
+小ゲイマシマリ	小ゲイマジマリ			こげいましまり	こげいまじまり	n	(go terminology)
+小ゲイマスベリ	小ゲイマのスベリ			こげいますべり	こげいまのすべり	n	(go terminology)
+五間ビラキ				ごけんびらき		n	(go terminology)
+小ザル				こざる		n	(go terminology)
+五子				ごし		n	five stones
+コスミ				こすみ		n	(go terminology)
+コスミカケ	コスミガケ			こすみかけ	こすみがけ	n	(go terminology)
+コスミ出し				こすみだし		n	(go terminology)
+コスミツケ				こすみつけ		n	(go terminology)
+碁聖				ごせい		n	the Gosei title
+五段				ごだん		n	5 dan
+後手				ごて		n	(go terminology)
+後手の先手				ごてのせんて		n	(go terminology)
+諺				ことわざ		n	(go terminology)
+小ナダレ				こなだれ		n	(go terminology)
+五の五				ごのご		n	the 5-5 point
+碁盤				ごばん		n	(go terminology)
+細かい				こまかい		adj-i	(go terminology)
+ごまかし手	ゴマカシ手			ごまかして		n	(go terminology)
+コミ				こみ		n	(go terminology)
+コミ出し				こみだし		n	komi
+小目				こもく		n	(go terminology)
+五目中手	五目ナカデ			ごもくなかで		n	(go terminology)
+凝り形	コリ形			こりがたち		n	(go terminology)
+殺す				ころす		v	(go terminology)
+碁ワールド				ごワールド		n	Go World, monthly publication from Nihon Ki-in
+根拠				こんきょ		n	(go terminology)
+根本				こんぽん		n	base for making life for a group
+下がり	サガリ			さがり		n	(go terminology)
+裂かれ形				さかれがたち		n	divided shape, two groups having to make life on their own
+作戦				さくせん		n	(go terminology)
+サシ込み	サシコミ			さしこみ		n	(go terminology)
+サバキ				さばき		n	(go terminology)
+左辺				さへん		n	(go terminology)
+左右同形	左右同型			さゆうどうけい		n	(go terminology)
+ざる碁	ザル碁			ざるご		n	(go terminology)
+サルスベリ				さるすべり		n	(go terminology)
+三間高バサミ				さんげんたかばさみ		n	(go terminology)
+三間トビ				さんげんとび		n	(go terminology)
+三間バサミ				さんげんばさみ		n	(go terminology)
+三間ビラキ				さんげんびらき		n	(go terminology)
+三劫	三コウ			さんこう		n	(go terminology)
+参考図				さんこうず		n	reference diagram
+三々				さんさん		n	(go terminology)
+三々打ち込み				さんさんうちこみ		n	(go terminology)
+三々のシマリ				さんさんのしまり		n	(go terminology)
+三子				さんし		n	three stones
+三段				さんだん		n	3 dan
+三羽ガラス				さんばがらす		n	(go terminology)
+三目中手	三目ナカデ			さんもくなかで		n	(go terminology)
+残留				ざんりゅう		n	remaining in a league
+三連星				さんれんせい		n	(go terminology)
+子				し		n	(go terminology)
+死				し		n	(go terminology)
+地				じ		n	(go terminology)
+地合	地あい			じあい		n	(go terminology)
+死活				しかつ		n	(go terminology)
+持碁	ジゴ			じご		n	(go terminology)
+下				した		n	(go terminology)
+下ツケ				したつけ		n	(go terminology)
+下手	した手			したて		n	(go terminology)
+下ハネ				したはね		n	(go terminology)
+下バネ				したばね		n	(go terminology)
+シチョウ	シチョー			しちょう		n	(go terminology)
+シチョウアタリ				しちょうあたり		n	(go terminology)
+失着				しっちゃく		n	(go terminology)
+失敗				しっぱい		n	(go terminology)
+実利				じつり		n	(go terminology)
+指導碁				しどうご		n	(go terminology)
+死に石				しにいし		n	(go terminology)
+死に形				しにがたち		n	(go terminology)
+死ぬ				しぬ		n	(go terminology)
+凌ぎ	シノギ			しのぎ		n	(go terminology)
+絞り	シボリ			しぼり		n	(go terminology)
+絞る	シボる			しぼる		v	(go terminology)
+締まり	シマリ			しまり		n	(go terminology)
+シメツケ				しめつけ		n	(go terminology)
+地模様	地モヨウ			じもよう		n	(go terminology)
+弱点				じゃくてん		n	(go terminology)
+週刊碁				しゅうかんご		n	Go Weekly, weekly publication from Nihon Ki-in
+十九路				じゅうきゅうろ		n	19x19
+終局				しゅうきょく		n	(go terminology)
+秀策流				しゅうさくりゅう		n	(go terminology)
+十三路				じゅうさんろ		n	13x13
+十子				じゅうし		n	ten stones
+十段				じゅうだん		n	the Judan title
+終盤				しゅうばん		n	(go terminology)
+十番碁				じゅうばんご		n	(go terminology)
+終盤戦				しゅうばんせん		n	(go terminology)
+十分				じゅうぶん		n	(go terminology)
+準決勝				じゅんけっしょう		n	semifinal
+準々決勝				じゅんじゅんけっしょう		n	quarterfinal
+消去				しょうきょ		n	(go terminology)
+状況				じょうきょう		n	(go terminology)
+上手				じょうず		n	(go terminology)
+定石				じょうせき		n	(go terminology)
+定先				じょうせん		n	(go terminology)
+勝負				しょうぶ		n	(go terminology)
+勝負手				しょうぶて		n	all-or-nothing move
+上辺				じょうへん		n	(go terminology)
+初級				しょきゅう		n	(go terminology)
+初段				しょだん		n	shodan, 1 dan
+序盤				じょばん		n	(go terminology)
+序盤戦				じょばんせん		n	(go terminology)
+白				しろ		n	(go terminology)
+白い				しろい		adj-i	(go terminology)
+白番				しろばん		n	(go terminology)
+陣笠				じんがさ		n	(go terminology)
+新手				しんて		n	new move
+新布石				しんふせき		n	(go terminology)
+新聞碁				しんぶんご		n	(go terminology)
+侵略				しんりゃく		n	(go terminology)
+図				ず		n	(go terminology)
+筋				すじ		n	(go terminology)
+筋悪				すじわる		n	(go terminology)
+裾空き	スソ空き	スソあき	スソアキ	すそあき		n	(go terminology)
+裾ガカリ	スソガカリ			すそがかり		n	(go terminology)
+スソ払い				すそばらい		n	(go terminology)
+捨て石				すていし		n	(go terminology)
+捨てる				すてる		v	(go terminology)
+滑り	スベリ			すべり		n	(go terminology)
+滑る	スベる			すべる		v	(go terminology)
+隅	スミ			すみ		n	(go terminology)
+隅の曲がり四目	隅のマガリ四目			すみのまがりしもく		n	(go terminology)
+正解				せいかい		n	(go terminology)
+成功				せいこう		n	(go terminology)
+井目				せいもく		n	(go terminology)
+井目風鈴				せいもくふうりん		n	(go terminology)
+勢力				せいりょく		n	(go terminology)
+セキ				せき		n	(go terminology)
+セキ生き				せきいき		n	(go terminology)
+石塔絞り	石塔シボリ			せきとうしぼり		n	(go terminology)
+切断				せつだん		n	cutting
+攻め				せめ		n	(go terminology)
+攻め合い	セメアイ			せめあい		n	(go terminology)
+攻め取り	セメドリ			せめどり		n	semedori
+攻める				せめる		v	(go terminology)
+戦				せん		n	(go terminology)
+線				せん		n	(go terminology)
+先相先				せんあいせん		n	(go terminology)
+全局				ぜんきょく		n	(go terminology)
+先生				せんせい		n	(go terminology)
+先手				せんて		n	(go terminology)
+先二				せんに		n	(go terminology)
+全滅				ぜんめつ		n	(go terminology)
+相場				そうば		n	reasonable, par
+俗				ぞく		n	(go terminology)
+俗手				ぞくしゅ		n	(go terminology)
+俗筋				ぞくすじ		n	(go terminology)
+側面				そくめん		n	(go terminology)
+外				そと		n	(go terminology)
+外側				そとがわ		n	(go terminology)
+外ダメ				そとだめ		n	(go terminology)
+外ヅケ				そとづけ		n	(go terminology)
+外マガリ				そとまがり		n	(go terminology)
+側劫	ソバ劫	ソバコウ		そばこう		n	(go terminology)
+損				そん		n	(go terminology)
+対局				たいきょく		n	(go terminology)
+対策				たいさく		n	(go terminology)
+大斜				たいしゃ		n	(go terminology)
+大石				たいせき		n	(go terminology)
+大々ゲイマ				だいだいげいま		n	(go terminology)
+大々ゲイマガカケ	大々ゲイマガガケ			だいだいげいまがかけ		n	(go terminology)
+大々ゲイマガカリ				だいだいげいまがかり		n	(go terminology)
+大々ゲイマスベリ				だいだいげいますべり		n	(go terminology)
+大々ゲイマビラキ				だいだいげいまびらき		n	(go terminology)
+高い				たかい		adj-i	(go terminology)
+互先				たがいせん		n	(go terminology)
+高ガカリ				たかがかり		n	(go terminology)
+高ゲイマジマリ				たかげいまじまり		n	(go terminology)
+高目				たかもく		n	(go terminology)
+巧み				たくみ		n	(go terminology)
+竹節	タケフ			たけふ		n	(go terminology)
+出し	ダシ			だし		n	(go terminology)
+襷型	タスキ型			たすきがた		n	(go terminology)
+襷布石	タスキ布石			たすきふせき		n	diagonal fuseki
+戦い				たたかい		n	(go terminology)
+戦う				たたかう		v	(go terminology)
+正しい				ただしい		adj-i	(go terminology)
+立ち				たち		n	(go terminology)
+脱出				だっしゅつ		n	(go terminology)
+狸の腹鼓	狸の腹つづみ			たぬきのはらつづみ		n	(go terminology)
+種石	タネ石			たねいし		n	(go terminology)
+騙し手	だまし手			だまして		n	(go terminology)
+駄目	ダメ			だめ		n	(go terminology)
+駄目詰まり	駄目ヅマリ	ダメ詰まり	ダメヅマリ	だめづまり		n	(go terminology)
+ダメヅメ				だめづめ		n	(go terminology)
+段				だん		n	(go terminology)
+団子	ダンゴ			だんご		n	(go terminology)
+団体戦				だんたいせん		n	team competition
+小さい				ちいさい		adj-i	(go terminology)
+チギリ				ちぎり		n	(go terminology)
+チキリトビ				ちきりとび		n	(go terminology)
+縮める				ちじめる		v	(go terminology)
+中央				ちゅうおう		n	(go terminology)
+中押勝	中押勝ち			ちゅうおしがち		n	winning by opponent's resignation
+中国流				ちゅうごくりゅう		n	Chinese opening
+中国流布石				ちゅうごくりゅうふせき		n	Chinese opening
+中盤				ちゅうばん		n	(go terminology)
+中盤戦				ちゅうばんせん		n	(go terminology)
+中部総本部				ちゅうぶそうほんぶ		n	Chubu general headquarters (Nihon Ki-in Nagoya branch)
+調子				ちょうし		n	(go terminology)
+長生				ちょうせい		n	(go terminology)
+挑戦				ちょうせん		n	(go terminology)
+挑戦権				ちょうせんけん		n	right to challenge for a title
+挑戦者				ちょうせんしゃ		n	(go terminology)
+挑戦手合				ちょうせんてあい		n	(go terminology)
+直四目				ちょくしもく		n	(go terminology)
+珍瓏				ちんろう		n	(go terminology)
+ツギ				つぎ		n	(go terminology)
+突き当たり	突きアタリ	ツキ当たり	ツキアタリ	つきあたり		n	(go terminology)
+突き出し	突きダシ	ツキ出し	ツキダシ	つきだし		n	(go terminology)
+次の一手				つぎのいって		n	(go terminology)
+ツグ				つぐ		v	(go terminology)
+作り碁				つくりご		n	counting the score at the end of the game by rearranging the stones
+付け	ツケ			つけ		n	(go terminology)
+ツケオサエ				つけおさえ		n	(go terminology)
+付け返し	ツケ返し			つけかえし		n	(go terminology)
+付けギリ	ツケギリ			つけぎり		n	(go terminology)
+付けコシ	ツケコシ			つけこし		n	(go terminology)
+ツケノビ				つけのび		n	(go terminology)
+付けハネ	ツケハネ			つけはね		n	(go terminology)
+付け引き	ツケヒキ			つけひき		n	(go terminology)
+付けフクレ	ツケフクレ			つけふくれ		n	(go terminology)
+突込み	ツッコミ			つっこみ		n	(go terminology)
+突張り	ツッパリ			つっぱり		n	(go terminology)
+ツナギ				つなぎ		n	(go terminology)
+つぶれる				つぶれる		v	(go terminology)
+ツメ				つめ		n	(go terminology)
+詰碁				つめご		n	tsume-go
+詰める				つめる		v	(go terminology)
+強い				つよい		adj-i	(go terminology)
+鶴ノ巣籠り	鶴の巣ごもり			つるのすごもり		n	(go terminology)
+手				て		n	(go terminology)
+出	デ			で		n	(go terminology)
+手合				てあい		n	(go terminology)
+手入れ				ていれ		n	(go terminology)
+敵				てき		n	(go terminology)
+出切り	デギリ			でぎり		n	(go terminology)
+手順				てじゅん		n	(go terminology)
+手筋				てすじ		n	(go terminology)
+鉄柱				てっちゅう		n	(go terminology)
+手止まり				てどまり		n	(go terminology)
+手抜き				てぬき		n	tenuki
+手番				てばん		n	(go terminology)
+出る				でる		v	(go terminology)
+手割り				てわり		n	tewari
+手を抜く				てをぬく		v	to play tenuki
+天狗の鼻付け				てんぐのはなづけ		n	(go terminology)
+天元				てんげん		n	the Tengen title; the 10-10 point
+トーチカ				とーちか		n	(go terminology)
+投了				とうりょう		n	(go terminology)
+徳利	トックリ			とっくり		n	(go terminology)
+飛び	跳び	トビ		とび		n	(go terminology)
+トビ込み	トビコミ			とびこみ		n	(go terminology)
+トビサガリ				とびさがり		n	(go terminology)
+飛び出し	トビ出し	トビダシ		とびだし		n	(go terminology)
+トビツケ				とびつけ		n	(go terminology)
+トビマガリ				とびまがり		n	(go terminology)
+取り	トリ			とり		n	(go terminology)
+取り返し	トリカエシ			とりかえし		n	(go terminology)
+トリカケ				とりかけ		n	(go terminology)
+取る				とる		v	(go terminology)
+トントン				とんとん		n	(go terminology)
+中手	ナカデ			なかで		n	(go terminology)
+投げ場				なげば		n	(go terminology)
+投げる				なげる		v	(go terminology)
+雪崩	ナダレ			なだれ		n	(go terminology)
+七子				ななし		n	seven stones
+七段				ななだん		n	7 dan
+七目中手	七目ナカデ			ななもくなかで		n	(go terminology)
+七路				ななろ		n	7x7
+ナマノゾキ				なまのぞき		n	(go terminology)
+並び	ナラビ			ならび		n	(go terminology)
+逃がす				にがす		v	(go terminology)
+二眼				にがん		n	(go terminology)
+握り	にぎり	ニギリ		にぎり		n	nigiri
+逃げ出し				にげだし		n	(go terminology)
+逃げる				にげる		v	(go terminology)
+二間受け				にけんうけ		n	(go terminology)
+二間シマリ				にけんしまり		n	(go terminology)
+二間ジマリ				にけんじまり		n	(go terminology)
+二間高ガカリ				にけんたかがかり		n	(go terminology)
+二間高ジマリ				にけんたかじまり		n	(go terminology)
+二間高バサミ				にけんたかばさみ		n	(go terminology)
+二間トビ				にけんとび		n	(go terminology)
+二間バサミ				にけんばさみ		n	(go terminology)
+二間ビラキ				にけんびらき		n	(go terminology)
+二子				にし		n	two stones
+二子の頭	二子のアタマ			にしのあたま		n	(go terminology)
+二段				にだん		n	2 dan; two-step
+二段オサエ				にだんおさえ		n	(go terminology)
+二段劫	二段コウ			にだんこう		n	(go terminology)
+二段バネ				にだんばね		n	(go terminology)
+２の一	二の一	二ノ一		にのいち		n	(go terminology)
+日本棋院				にほんきいん		n	(go terminology)
+入段				にゅうだん		n	becoming a professional player
+二連星				にれんせい		n	(go terminology)
+抜き	ヌキ			ぬき		n	(go terminology)
+抜く				ぬく		v	(go terminology)
+ぬるい				ぬるい		adj-i	(go terminology)
+ノゾキ				のぞき		n	(go terminology)
+伸び	ノビ			のび		n	(go terminology)
+ノビ込み	ノビコミ			のびこみ		n	(go terminology)
+ノビ出し	ノビダシ			のびだし		n	(go terminology)
+敗				はい		n	(go terminology)
+杯				はい		n	(go terminology)
+這い	這イ	ハイ		はい		n	(go terminology)
+ハイコミ				はいこみ		n	(go terminology)
+配置				はいち		n	(go terminology)
+敗着				はいちゃく		n	losing move
+ハザマ				はざま		n	(go terminology)
+ハザマスベリ				はざますべり		n	(go terminology)
+ハザマトビ				はざまとび		n	(go terminology)
+挟み	ハサミ			はさみ		n	(go terminology)
+ハサミ返し	ハサミカエシ			はさみかえし		n	(go terminology)
+ハサミツケ				はさみつけ		n	(go terminology)
+走り	ハシリ			はしり		n	(go terminology)
+バタバタ				ばたばた		n	(go terminology)
+八子				はちし		n	eight stones
+八段				はちだん		n	8 dan
+鼻				はな		n	(go terminology)
+鼻付け	鼻ツケ	鼻ヅケ		はなつけ	はなづけ	n	(go terminology)
+花見劫	花見コウ			はなみこう		n	(go terminology)
+花六				はなろく		n	(go terminology)
+ハネ				はね		n	(go terminology)
+ハネ返し	ハネカエシ			はねかえし		n	(go terminology)
+ハネ切り	ハネキリ			はねきり		n	(go terminology)
+ハネ込み	ハネコミ			はねこみ		n	(go terminology)
+ハネ殺し				はねごろし		n	(go terminology)
+ハネ出し	ハネダシ			はねだし		n	(go terminology)
+ハネツギ				はねつぎ		n	(go terminology)
+幅				はば		n	(go terminology)
+ハマ				はま		n	(go terminology)
+嵌まり	はまり	ハマリ		はまり		n	(go terminology)
+嵌め手	はめ手	ハメ手		はめて		n	(go terminology)
+ハメ手破り				はめてやぶり		n	(go terminology)
+早い				はやい		adj-i	(go terminology)
+早碁				はやご		n	(go terminology)
+腹				はら		n	(go terminology)
+腹付け	腹ツケ	腹ヅケ		はらつけ	はらづけ	n	(go terminology)
+半眼				はんがん		n	(go terminology)
+反撃				はんげき		n	(go terminology)
+番碁				ばんご		n	(go terminology)
+半劫	半コウ			はんこう		n	(go terminology)
+盤面				ばんめん		n	surface of the board, also: the situation on the board
+半目				はんもく		n	(go terminology)
+半目勝負				はんもくしょうぶ		n	(go terminology)
+ヒカルの碁	ヒカ碁			ひかるのご	ひかご	n	(go terminology)
+引き	ヒキ			ひき		n	(go terminology)
+引く				ひく		v	(go terminology)
+低い				ひくい		adj-i	(go terminology)
+低ガカリ				ひくがかり		n	(go terminology)
+左				ひだり		n	(go terminology)
+引っくり返し				ひっくりかえし		n	(go terminology)
+秒読み				びょうよみ		n	byoyomi
+開き	ヒラキ			ひらき		n	extension on 3rd or 4th line
+広い				ひろい		adj-i	(go terminology)
+広げる				ひろげる		v	(go terminology)
+ピンツギ				ぴんつぎ		n	(go terminology)
+封鎖				ふうさ		n	(go terminology)
+封じ手				ふうじて		n	sealed move
+フクラミ				ふくらみ		n	(go terminology)
+膨れ	フクレ			ふくれ		n	(go terminology)
+布石				ふせき		n	fuseki
+ブツカリ				ぶつかり		n	(go terminology)
+フトコロ				ふところ		n	(go terminology)
+ブラ下がり	ブラサガリ			ぶらさがり		n	(go terminology)
+不利				ふり		n	(go terminology)
+振り替わり	フリカワリ			ふりかわり		n	(go terminology)
+ヘコミ				へこみ		n	(go terminology)
+下手	ヘタ			へた		n	(go terminology)
+へぼ	ヘボ			へぼ		n	(go terminology)
+辺				へん		n	(go terminology)
+変化				へんか		n	(go terminology)
+包囲				ほうい		n	(go terminology)
+方向				ほうこう		n	(go terminology)
+帽子	ボウシ			ぼうし		n	(go terminology)
+棒ツギ				ぼうつぎ		n	(go terminology)
+放り込み	ホウリ込み	ホウリコミ		ほうりこみ		n	(go terminology)
+ポカ				ぽか		n	(go terminology)
+星	ホシ			ほし		n	(go terminology)
+星のシマリ				ほしのしまり		n	(go terminology)
+星ワキ				ほしわき		n	(go terminology)
+本因坊				ほんいんぼう		n	the Honinbo title
+本劫	本コウ			ほんこう		n	(go terminology)
+本戦				ほんせん		n	main tournament
+本手				ほんて		n	honte
+ポン抜き	ポンヌキ			ぽんぬき		n	ponnuki
+舞殿				まいど		n	(go terminology)
+曲がり	マガリ			まがり		n	(go terminology)
+曲がり四目	マガリ四目			まがりしもく		n	(go terminology)
+曲がり付け	マガリ付け	マガリツケ		まがりつけ		n	(go terminology)
+曲げ	マゲ			まげ		n	(go terminology)
+曲げ付け	マゲツケ			まげつけ		n	(go terminology)
+負ける				まける		v	(go terminology)
+間違い				まちがい		n	(go terminology)
+まとまり				まとまり		n	(go terminology)
+真似碁	まね碁	マネ碁		まねご		n	(go terminology)
+守り				まもり		n	(go terminology)
+守る				まもる		v	(go terminology)
+万年劫	万年コウ			まんねんこう		n	(go terminology)
+見合い				みあい		n	miai
+右				みぎ		n	(go terminology)
+ミニ中国流				みにちゅうごくりゅう		n	(go terminology)
+妙手				みょうしゅ		n	spectacular move
+向かい小目				むかいこもく		n	(go terminology)
+無劫	無コウ			むこう		n	(go terminology)
+無条件生き				むじょうけんいき		n	unconditional life
+無勝負				むしょうぶ		n	(go terminology)
+村正の妖刀				むらまさのようとう		n	(go terminology)
+無理				むり		n	(go terminology)
+目	眼			め		n	(go terminology)
+眼あり眼なし	目あり目なし	メアリメナシ		めありめなし		n	(go terminology)
+名人				めいじん		n	the Meijin title
+眼形				めがたち	がんけい	n	eye shape
+目	モク			もく		n	(go terminology)
+目外し	目ハズシ			もくはずし		n	(go terminology)
+モタレ				もたれ		n	(go terminology)
+モチコミ				もちこみ		n	a failure resulting in orphaned stones with little or no aji
+模様	モヨウ			もよう		n	moyo
+櫓				やぐら		n	(go terminology)
+破る				やぶる		v	(go terminology)
+破れる				やぶれる		v	(go terminology)
+優勢				ゆうせい		n	(go terminology)
+ゆるみシチョウ	ユルミシチョウ			ゆるみしちょう		n	(go terminology)
+良い	好い			よい	いい	adj-i	(go terminology)
+様子見				ようすみ		n	(go terminology)
+様子見る				ようすみる		v	(go terminology)
+様子を見る	ようすを見る			ようすをみる		v	(go terminology)
+横				よこ		n	(go terminology)
+横ツケ				よこつけ		n	(go terminology)
+横ヅッパリ				よこづっぱり		n	(go terminology)
+寄せ	ヨセ			よせ		n	endgame
+寄せ劫	ヨセコウ			よせこう		n	(go terminology)
+読み				よみ		n	(go terminology)
+弱い				よわい		adj-i	(go terminology)
+弱気				よわき		n	(go terminology)
+四間ビラキ				よんけんびらき		n	(go terminology)
+四子				よんし		n	four stones
+四段				よんだん		n	4 dan
+四目中手	四目ナカデ			よんもくなかで		n	(go terminology)
+四連星				よんれんせい		n	yon-ren-sei fuseki
+四路				よんろ		n	4x4
+利				り		n	(go terminology)
+竜星				りゅうせい		n	the Ryusei title
+両当たり	両アタリ			りょうあたり		n	(go terminology)
+両ガカリ				りょうがかり		n	(go terminology)
+両ガラミ				りょうがらみ		n	(go terminology)
+両ゲイマ				りょうげいま		n	(go terminology)
+両劫	両コウ			りょうこう		n	(go terminology)
+両後手				りょうごて		n	(go terminology)
+両先手				りょうせんて		n	(go terminology)
+両にらみ				りょうにらみ		n	(go terminology)
+両ノゾキ				りょうのぞき		n	(go terminology)
+両バネ				りょうばね		n	(go terminology)
+両翼の陣				りょうよくのじん		n	(go terminology)
+冷静				れいせい		n	(go terminology)
+連碁				れんご		n	(go terminology)
+連続				れんぞく		n	(go terminology)
+連絡				れんらく		n	(go terminology)
+六子				ろくし		n	six stones
+六段				ろくだん		n	6 dan
+六目中手	六目ナカデ			ろくもくなかで		n	(go terminology)
+分かれ				わかれ		n	split
+渡り	ワタリ			わたり		n	(go terminology)
+割り打ち				わりうち		n	(go terminology)
+割り込み	ワリコミ			わりこみ		n	warikomi
+悪い				わるい		adj-i	(go terminology)

@@ -15,8 +15,8 @@ visited_pages = []
 i = 0
 puts "Counting..."
 File.open(source, "r") do |f|
-  while (i < 500 && s = f.gets)
-  # while (s = f.gets)
+  # while (i < 500 && s = f.gets)
+  while (s = f.gets)
     s.force_encoding("UTF-8")
     s.gsub!("'", "_") # messes up SQL strings and we're not interested in them anyway
     $stderr.print("\x08" * 6, i) if (i += 1) % 100 == 0
@@ -178,7 +178,6 @@ AND     mt.translation_id = t.id"
 EOF
 
 puts "Preparing reports..."
-# count.reject! { |characters, cnt| characters =~ /^[\uFF00-\uFFFF]*$/ } # full-width digits etc.
 count.reject! { |characters, cnt| characters !~ /[\u4E00-\u9FFF]/ } # has to have at least one CJK Unified Ideograph
 no_of_matches = count.values.inject(:+)
 distinct_no_of_matches = count.size

@@ -1,28 +1,3 @@
-ruby upload_go.rb
-	C:\Users\Gustav\Git Projects\japanese-word-frequency\scripts>ruby upload_go.rb
-	2013-05-08 10:12:40 +0100
-	Before:
-	entry: 892708
-	go_entry: 0
-	kanji_representation: 813081
-	lookup_item: 665192
-	reading: 907805
-	meaning: 907834
-	part_of_speech: 952430
-	information: 123
-	Inserting into part-of-speech lookup table...
-	Inserting entries...
-	After:
-	entry: 893332
-	go_entry: 624
-	kanji_representation: 813903
-	lookup_item: 665699
-	reading: 908443
-	meaning: 908458
-	part_of_speech: 953054
-	information: 124
-	2013-05-08 10:13:01 +0100
-
 cd C:\Users\Gustav\Git Projects\japanese-word-frequency\scripts
 mysql -u root -p
 drop database dict;
@@ -56,19 +31,30 @@ ruby upload_my.rb
 	2013-05-10 11:49:38 +0100
 mysql -D dict -u dict -pwelcome
 source create_indexes_2.sql
+
+make copy of database before adding my entries
+mysql -u root -p -e "CREATE DATABASE dict0 CHARACTER SET utf8 COLLATE utf8_bin"
+mysql -u root -p -e "GRANT ALL ON dict0.* TO 'dict'@'localhost' WITH GRANT OPTION"
+mysqldump -u dict -pwelcome dict | mysql -D dict0 -u dict -pwelcome
+
+ruby upload_my.rb
+
 ruby count.rb extracted_commentary.jtxt
 ruby count.rb extracted_wikipedia.jtxt
 ruby count.rb extracted_news.jtxt
 
 mysql -D dict_old -u dict -pwelcome
 
-ruby upload_go.rb
-
 select count(*) from entry;
-select count(*) from go_entry;
-select count(*) from kanji_representation;
+select count(*) from dictionary_entry;
+select count(*) from jmdict_entry;
+select count(*) from my_entry;
+select count(*) from name_entry;
 select count(*) from lookup_item;
+select count(*) from kanji_representation;
 select count(*) from reading;
 select count(*) from meaning;
-select count(*) from part_of_speech;
+select count(*) from translation;
+select count(*) from meaning_translation;
 select count(*) from information;
+select count(*) from part_of_speech;
