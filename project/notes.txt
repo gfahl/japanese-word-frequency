@@ -58,3 +58,81 @@ select count(*) from translation;
 select count(*) from meaning_translation;
 select count(*) from information;
 select count(*) from part_of_speech;
+
+ruby crawl_commentaries.rb
+ruby crawl_wikipedia.rb
+ruby crawl_news_1.rb
+ruby crawl_news_2.rb
+
+	Visited: 3800, Remaining: 0, Not found: 65
+	Not found:
+	http://www.asahi.com/igo/meijin/PND38_15_a07.html
+	http://www.asahi.com/igo/meijin/PND37_7ban07_06.html
+	http://www.asahi.com/igo/meijin/PND37_7ban07_07.html
+	http://www.asahi.com/igo/meijin/PND37_7ban07_08.html
+	http://www.asahi.com/igo/meijin/PND37_7ban07_09.html
+	http://www.asahi.com/igo/meijin/PND37_7ban07_10.html
+	http://www.asahi.com/igo/meijin/PND37_7ban07_11.html
+	http://www.asahi.com/igo/meijin/PND37_7ban07_12.html
+	http://www.asahi.com/igo/meijin/PND37_7ban07_13.html
+	http://www.asahi.com/igo/meijin/PND35_36_02.html
+	http://www.asahi.com/igo/meijin/PND34_33_02.html
+	http://www.asahi.com/igo/meijin/PND34_33_03.html
+	http://www.asahi.com/igo/meijin/PND34_33_04.html
+	http://www.asahi.com/igo/meijin/PND34_33_05.html
+	http://www.asahi.com/igo/meijin/PND34_33_06.html
+	http://www.asahi.com/igo/meijin30/7ban01b.html
+	http://www.asahi.com/igo/meijin29/06.html
+	http://www.asahi.com/igo/meijin/PND38_16_a08.html
+	http://www.asahi.com/igo/meijin/PND38_14_a08.html
+	http://www.asahi.com/igo/meijin/PND38_13_a08.html
+	http://www.asahi.com/igo/meijin/PND38_12_a10.html
+	http://www.asahi.com/igo/meijin/PND38_11_a08.html
+	http://www.asahi.com/igo/meijin/PND38_10_a08.html
+	http://www.asahi.com/igo/meijin/PND38_09_a08.html
+	http://www.asahi.com/igo/meijin/PND38_08_a07.html
+	http://www.asahi.com/igo/meijin/PND38_07_a09.html
+	http://www.asahi.com/igo/meijin/PND38_06_a08.html
+	http://www.asahi.com/igo/meijin/PND38_05_a08.html
+	http://www.asahi.com/igo/meijin/PND38_04_a08.html
+	http://www.asahi.com/igo/meijin/PND38_03_a08.html
+	http://www.asahi.com/igo/meijin/PND38_02_a08.html
+	http://www.asahi.com/igo/meijin/PND38_01_08.html
+	http://www.asahi.com/igo/meijin/PND37_7ban06_14.html
+	http://www.asahi.com/igo/meijin/PND37_7ban05_13.html
+	http://www.asahi.com/igo/meijin/PND37_7ban04_14.html
+	http://www.asahi.com/igo/meijin/PND37_28_07.html
+	http://www.asahi.com/igo/meijin/PND37_24_07.html
+	http://www.asahi.com/igo/meijin/PND37_17_07.html
+	http://www.asahi.com/igo/meijin/PND37_15_07.html
+	http://www.asahi.com/igo/meijin/PND37_09_07.html
+	http://www.asahi.com/igo/meijin/PND37_08_07.html
+	http://www.asahi.com/igo/meijin/PND36_35_07.html
+	http://www.asahi.com/igo/meijin/PND36_34_07.html
+	http://www.asahi.com/igo/meijin/PND36_27_07.html
+	http://www.asahi.com/igo/meijin/PND35_33_06.html
+	http://www.asahi.com/igo/meijin/PND35_24_07.html
+	http://www.asahi.com/igo/meijin/PND35_13_07.html
+	http://www.asahi.com/igo/meijin/PND35_08_08.html
+	http://www.asahi.com/igo/meijin/PND35_07_08.html
+	http://www.asahi.com/igo/meijin/PND35_06_07.html
+	http://www.asahi.com/igo/meijin/PND35_05_07.html
+	http://www.asahi.com/igo/meijin/PND35_04_08.html
+	http://www.asahi.com/igo/meijin/PND35_03_07.html
+	http://www.asahi.com/igo/meijin33/34/07.html
+	http://www.asahi.com/igo/meijin33/33/07.html
+	http://www.asahi.com/igo/meijin33/23/01.html
+	http://www.asahi.com/igo/meijin33/pre_final01/06.html
+	http://www.asahi.com/igo/meijin30/7ban07/14.html
+	http://www.asahi.com/igo/meijin29/36/02.html
+	http://www.asahi.com/igo/meijin/TKY201103030277.html
+	http://www.asahi.com/igo/meijin29/18/07.html
+	http://www.asahi.com/igo/meijin29/34/07.html
+	http://www.asahi.com/igo/meijin29/13/07.html
+	http://www.asahi.com/igo/meijin29/35/06.html
+	http://www.asahi.com/igo/meijin29/10/07.html
+
+ruby extract_commentary.rb
+ruby extract_wikipedia.rb
+ruby extract_news.rb
+

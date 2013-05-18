@@ -1,2 +1,6 @@
 gh-pages/
 project/japanese-word-frequency.sublime-workspace
+project/japanese-word-frequency.sublime-project
+scripts/downloads/
+scripts/*.html
+scripts/*.xml
