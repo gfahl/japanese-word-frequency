@@ -15,7 +15,10 @@
         <li>The program only looks for words containing at least one kanji. This means that particles such as の and other kana-only words like これから are not counted.</li>
         <li>The only grammatical analysis that the program performs is to identify verbs and い-adjectives. It only looks for the stem (such as 食べ for 食べる and 黒 for 黒い). This enables it to identify conjugations like 食べます and 食べた as belonging to the same dictionary entry 食べる. Likewise, 黒い and 黒くて are counted together. This does however mean that distinct verbs like 囲う and 囲む are counted together and that there will be one combined count for the words 黒, 黒い, and 黒む.</li>
     </ul>
+
+    <h2>Go Terminology</h2>
     <p>The dictionary (JMDict) used for the analysis is understandably rather incomplete with regard to go terminology. Example of words that are not in the dictionary: 手抜き (tenuki), 眼形 (eye shape), 利かし (kikashi). Examples of words that <em>are</em> in the dictionary: 攻め合い (semeai), 先手 (sente), 定石 (joseki).</p>
+    <p>We will manually add some go terminology to the dictionary database we create from JMDict.</p>
 
     <h2>Crawl for documents</h2>
     <p>Downloaded pages are saved with a path corresponding to their type and url. For example, the overview page for Meijin commentaries at "http://www.asahi.com/igo/meijin/PNDkansen_ichiran.html" is saved as "downloads/commentary/www.asahi.com/igo/meijin/PNDkansen_ichiran.html"</p>
@@ -73,7 +76,7 @@ later analyze all pages to extract the actual news text
     <p>Script to extract text from downloaded news pages: <em>extract_news.rb</em></p>
 
     <h2>Create a dictionary database</h2>
-    <p>Data from the <a href="http://www.csse.monash.edu.au/~jwb/jmdict.html">JMDict</a> project is used to create the dictionary database.</p>
+    <p>Data from the <a href="http://www.csse.monash.edu.au/~jwb/jmdict.html">JMDict</a> project is the main source for our dictionary database.</p>
     <p>We will look for words <em>and</em> names and so the following dictionary files are needed:</p>
     <ul>
         <li><a href="ftp://ftp.monash.edu.au/pub/nihongo/JMdict_e.gz">JMdict_e</a> (English-language only subset of the Japanese-Multilingual Dictionary). This is a zipped file, extract it and rename it to <code>dict.xml</code></li>
@@ -83,12 +86,14 @@ later analyze all pages to extract the actual news text
     <img src="jmdict.png" />
     <p>Below is a subset of the conceptual model of <strong>JMnedict</strong>. Only parts that are relevant to this exercise are included. The terminology used is the one in the xml file.</p>
     <img src="jmnedict.png" />
-    <p>Integrated, with the added concept <code>lookup item</code>. The terminology is changed to something more intuitive.</p>
+    <p>Integrated, with the added concepts <code>lookup item</code> and <code>my entry</code>. The schema terminology is changed to something more intuitive.</p>
     <img src="schema.png" />
     <p>Relational schema:</p>
     <pre>
 entry (id*)
-dictionary_entry (id* [fk to entry], seq_nbr)
+dictionary_entry (id* [fk to entry])
+jmdict_entry (id* [fk to dictionary_entry], seq_nbr)
+my_entry (id* [fk to dictionary_entry])
 name_entry (id* [fk to entry])
 lookup_item (id*, characters)
 kanji_representation (id*, entry_id [fk to entry], word, lookup_item_id [fk to lookup_item])
@@ -102,8 +107,9 @@ part_of_speech (meaning_id [fk to meaning], information_code [fk to information]
     <p>Script to create database: <em>create_database.sql</em></p>
     <p>Script to create tables: <em>create_tables.sql</em></p>
     <p>Script to create database indexes useful during the upload of data: <em>create_indexes_1.sql</em></p>
-    <p>Script to populate database with dictionary entries (161'722 as of 2012-04-03): <em>upload_dict.rb</em></p>
-    <p>Script to populate database with name entries (730'986 as of 2012-04-03): <em>upload_names.rb</em></p>
+    <p>Script to populate database with dictionary entries (169'037 as of 2013-05-09): <em>upload_dict.rb</em></p>
+    <p>Script to populate database with name entries (738'657 as of 2013-05-09): <em>upload_names.rb</em></p>
+    <p>Script to add entries missing in JMDict: <em>upload_my.rb</em></p>
     <p>Script to create the remaining database indexes and constraints: <em>create_indexes_2.sql</em></p>
 
     <h2>Frequency analysis</h2>
